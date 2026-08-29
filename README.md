@@ -10,8 +10,8 @@ O EcoTrend é um e-commerce fictício especializado em produtos sustentáveis, f
 * **Pedro Oliveira** - RM: 572468
 
 ## 🚀 Links do Projeto
-* **Repositório GitHub:** 
-* **Página Hospedada (Deploy):** 
+* **Repositório GitHub:** [https://github.com/bllacerenza-a11y/Cp-4-FrontEnd-Fiap]
+* **Página Hospedada (Deploy):** [https://bllacerenza-a11y.github.io/Cp-4-FrontEnd-Fiap/]
 
 ## 🛠️ Tecnologias Utilizadas
 * **HTML5** (Semântico)
@@ -29,7 +29,7 @@ O EcoTrend é um e-commerce fictício especializado em produtos sustentáveis, f
 * `style.css`: Sobrescrita de estilos do Bootstrap para aplicação da identidade visual (verde orgânico e efeitos visuais).
 
 ## ⚙️ Como executar o projeto localmente
-1. Clone este repositório: 
+1. Clone este repositório: `git clone [https://github.com/bllacerenza-a11y/Cp-4-FrontEnd-Fiap.git]`
 2. Abra a pasta do projeto no seu explorador de arquivos.
 3. Dê um duplo clique no arquivo `index.html` para abri-lo no seu navegador padrão. 
 *(Nenhuma instalação de dependência local é necessária, pois utilizamos CDNs para o Bootstrap e FontAwesome).*
