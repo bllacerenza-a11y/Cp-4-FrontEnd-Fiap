@@ -1,0 +1,74 @@
+/* =======================================================
+   VARIÁVEIS CUSTOMIZADAS E RESET
+======================================================== */
+:root {
+    --eco-green: #2b7a4b;       /* Verde principal da marca */
+    --eco-green-dark: #1e5c37;  /* Verde mais escuro para hover */
+    --eco-light: #f4f9f5;       /* Fundo bem claro esverdeado */
+}
+
+body {
+    background-color: var(--eco-light);
+}
+
+/* =======================================================
+   SOBRESCREVENDO AS CLASSES DO BOOTSTRAP
+======================================================== */
+
+/* Textos e Backgrounds */
+.text-success {
+    color: var(--eco-green) !important;
+}
+
+.bg-success {
+    background-color: var(--eco-green) !important;
+}
+
+/* Botões Preenchidos */
+.btn-success {
+    background-color: var(--eco-green);
+    border-color: var(--eco-green);
+}
+
+.btn-success:hover {
+    background-color: var(--eco-green-dark);
+    border-color: var(--eco-green-dark);
+}
+
+/* Botões com Contorno (Outline) */
+.btn-outline-success {
+    color: var(--eco-green);
+    border-color: var(--eco-green);
+}
+
+.btn-outline-success:hover {
+    background-color: var(--eco-green);
+    color: white;
+}
+
+/* =======================================================
+   ESTILIZAÇÃO DE COMPONENTES PERSONALIZADOS
+======================================================== */
+
+/* Efeito flutuante nos cartões de produtos ao passar o mouse */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 12px; /* Deixa as bordas um pouco mais arredondadas */
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(43, 122, 75, 0.15) !important;
+}
+
+/* Ajuste sutil na barra de navegação */
+.navbar {
+    background-color: #ffffff !important;
+    border-bottom: 2px solid var(--eco-green);
+}
+
+/* Deixa o input de range (filtro de preço) com a cor da marca */
+input[type=range]::-webkit-slider-thumb {
+    background: var(--eco-green);
+}

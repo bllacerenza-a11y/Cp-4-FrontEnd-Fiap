@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Produto | EcoTrend</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>body { font-family: 'Poppins', sans-serif; }</style>
+</head>
+<body>
+
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-success" href="index.html">
+                <i class="fa-solid fa-leaf"></i> EcoTrend
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menuNavegacao">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="categorias.html">Categorias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                </ul>
+                <div class="d-flex">
+                    <a href="#" class="btn btn-outline-success position-relative">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">3</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    
+    <main class="container my-5" style="min-height: 60vh;">
+        
+        
+        <div class="row align-items-center mb-5">
+            
+            <div class="col-12 col-md-6 mb-4 mb-md-0">
+                <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="img-fluid rounded shadow-sm w-100 object-fit-cover" style="max-height: 500px;" alt="Camiseta Algodão Orgânico">
+            </div>
+            
+            
+            <div class="col-12 col-md-6">
+                
+                <span class="badge bg-success mb-2 p-2">Em estoque</span>
+                
+                <h2 class="fw-bold">Camiseta Algodão Orgânico</h2>
+                <div class="mb-3 text-warning">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <span class="text-muted ms-2">(4.5 / 120 avaliações)</span>
+                </div>
+                
+                <h3 class="text-success fw-bold mb-4">R$ 89,90</h3>
+                
+                <p class="text-muted mb-4">
+                    Nossa camiseta é produzida com 100% de algodão orgânico cultivado sem agrotóxicos. Super macia, durável e com modelagem unissex. Ao escolher esta peça, você apoia práticas agrícolas sustentáveis e o comércio justo.
+                </p>
+
+                
+                <div class="d-flex align-items-center mb-4">
+                    <label for="quantidade" class="me-3 fw-bold">Quantidade:</label>
+                    <input type="number" id="quantidade" class="form-control text-center me-3" value="1" min="1" max="10" style="width: 80px;">
+                    
+                    
+                    <button type="button" class="btn btn-success btn-lg w-100" data-bs-toggle="modal" data-bs-target="#modalCompra">
+                        <i class="fa-solid fa-cart-shopping me-2"></i> Comprar
+                    </button>
+                </div>
+                
+                <p class="small text-muted"><i class="fa-solid fa-truck-fast me-2"></i> Frete grátis para compras acima de R$ 200,00.</p>
+            </div>
+        </div>
+
+        
+        <h4 class="text-center fw-bold mb-4">Características do Produto</h4>
+        <div class="row g-4 text-center">
+            <div class="col-12 col-md-4">
+                <div class="card border-0 shadow-sm h-100 p-3">
+                    <i class="fa-solid fa-leaf text-success fs-1 mb-3"></i>
+                    <h5 class="fw-bold">Ecológico</h5>
+                    <p class="text-muted small">Produzido sem produtos químicos nocivos ao meio ambiente.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card border-0 shadow-sm h-100 p-3">
+                    <i class="fa-solid fa-hands-holding-circle text-success fs-1 mb-3"></i>
+                    <h5 class="fw-bold">Comércio Justo</h5>
+                    <p class="text-muted small">Feito por produtores locais com remuneração adequada e justa.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card border-0 shadow-sm h-100 p-3">
+                    <i class="fa-solid fa-recycle text-success fs-1 mb-3"></i>
+                    <h5 class="fw-bold">Embalagem Zero Plástico</h5>
+                    <p class="text-muted small">Enviado em embalagem 100% reciclável e biodegradável.</p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    
+    <div class="modal fade" id="modalCompra" tabindex="-1" aria-labelledby="modalCompraLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title" id="modalCompraLabel">Confirmar Adição</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Você está adicionando <strong>Camiseta Algodão Orgânico</strong> ao seu carrinho.</p>
+                    <p>Deseja finalizar a compra agora ou continuar comprando?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <a href="index.html" class="btn btn-success">Confirmar compra</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <footer class="bg-dark text-white pt-5 pb-4 mt-5">
+        <div class="container text-center text-md-start">
+            <div class="row">
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold text-success mb-4"><i class="fa-solid fa-leaf"></i> EcoTrend</h6>
+                    <p>O seu e-commerce especializado em produtos sustentáveis. Promovendo um estilo de vida mais consciente para você e para o planeta.</p>
+                </div>
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">Políticas</h6>
+                    <p><a href="#" class="text-white text-decoration-none">Trocas e Devoluções</a></p>
+                    <p><a href="#" class="text-white text-decoration-none">Termos de Serviço</a></p>
+                    <p><a href="#" class="text-white text-decoration-none">Privacidade</a></p>
+                </div>
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">Contato</h6>
+                    <p><i class="fas fa-home me-3"></i> Av. Paulista, 1106 - São Paulo</p>
+                    <p><i class="fas fa-envelope me-3"></i> contato@ecotrend.com</p>
+                    <p><i class="fas fa-phone me-3"></i> (11) 98765-4321</p>
+                </div>
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">Siga-nos</h6>
+                    <a href="#" class="text-white me-3 fs-5"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-white me-3 fs-5"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-white me-3 fs-5"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <hr class="mb-4">
+            <div class="row align-items-center">
+                <div class="col-md-12 text-center">
+                    <p class="mb-0">© 2026 EcoTrend - Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
