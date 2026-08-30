@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Carrinho | EcoTrend</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- (Aviso para o amigo: Cole o mesmo Header das outras páginas aqui em cima) -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm">
+        <!-- ... (código do header) ... -->
+    </nav>
+
+    <main class="container my-5" style="min-height: 60vh;">
+        <h2 class="fw-bold text-success mb-4"><i class="fa-solid fa-cart-shopping me-2"></i> Meu Carrinho</h2>
+        
+        <div class="card border-0 shadow-sm p-4">
+            <div class="table-responsive">
+                <table class="table table-hover align-middle text-center">
+                    <thead class="table-success">
+                        <tr>
+                            <th scope="col">Produto</th>
+                            <th scope="col">Preço</th>
+                            <th scope="col">Quantidade</th>
+                            <th scope="col">Total</th>
+                            <th scope="col">Remover</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="text-start fw-bold">Camiseta Algodão Orgânico</td>
+                            <td>R$ 89,90</td>
+                            <td><input type="number" class="form-control mx-auto text-center" value="1" style="width: 70px;"></td>
+                            <td class="fw-bold text-success">R$ 89,90</td>
+                            <td><button class="btn btn-sm btn-outline-danger"><i class="fa-solid fa-trash"></i></button></td>
+                        </tr>
+                        <tr>
+                            <td class="text-start fw-bold">Copo de Bambu</td>
+                            <td>R$ 55,00</td>
+                            <td><input type="number" class="form-control mx-auto text-center" value="2" style="width: 70px;"></td>
+                            <td class="fw-bold text-success">R$ 110,00</td>
+                            <td><button class="btn btn-sm btn-outline-danger"><i class="fa-solid fa-trash"></i></button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="d-flex justify-content-between align-items-center mt-4">
+                <a href="categorias.html" class="btn btn-outline-secondary">Continuar Comprando</a>
+                <h4 class="fw-bold mb-0">Total: <span class="text-success">R$ 199,90</span></h4>
+                <button class="btn btn-success btn-lg">Finalizar Pedido</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- (Aviso para o amigo: Cole o mesmo Footer das outras páginas aqui embaixo) -->
+    
+</body>
+</html>
